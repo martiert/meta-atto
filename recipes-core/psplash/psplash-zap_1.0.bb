@@ -11,7 +11,7 @@ do_install_prepend() {
 
 inherit update-rc.d
 
-RRECOMMENDS_${PN} = "psplash-angstrom"
+RRECOMMENDS_${PN} = "psplash-atto"
 INITSCRIPT_NAME = "zzapsplash"
 INITSCRIPT_PARAMS = "start 99 5 S ."
 

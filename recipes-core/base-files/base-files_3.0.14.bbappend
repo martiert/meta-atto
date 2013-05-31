@@ -15,9 +15,9 @@ dirs755 += "${localstatedir}/cache \
             /run \
            "
 
-BASEFILESISSUEINSTALL = "do_install_angstromissue"
+BASEFILESISSUEINSTALL = "do_install_attoissue"
 
-do_install_angstromissue () {
+do_install_attoissue () {
     echo ${MACHINE} > ${D}${sysconfdir}/hostname
 
     install -m 644 ${WORKDIR}/issue*  ${D}${sysconfdir}
