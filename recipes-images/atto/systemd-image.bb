@@ -3,6 +3,8 @@
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COREBASE}/LICENSE;md5=3f40d7994397109285ec7b81fdeb3b58"
 
+PR_append = ".1"
+
 IMAGE_PREPROCESS_COMMAND = "rootfs_update_timestamp"
 
 DISTRO_UPDATE_ALTERNATIVES ??= ""
@@ -12,11 +14,12 @@ CONMANPKGS ?= "connman connman-plugin-loopback connman-plugin-ethernet connman-p
 CONMANPKGS_libc-uclibc = ""
 
 IMAGE_INSTALL += " \
-	atto-packagegroup-boot \
-	packagegroup-basic \
-	${CONMANPKGS} \
-	${ROOTFS_PKGMANAGE_PKGS} \
-	timestamp-service \
+    atto-packagegroup-boot \
+    packagegroup-basic \
+    ${CONMANPKGS} \
+    ${ROOTFS_PKGMANAGE_PKGS} \
+    timestamp-service \
+    vim \
 "
 
 IMAGE_DEV_MANAGER   = "udev"
