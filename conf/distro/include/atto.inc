@@ -161,10 +161,11 @@ DISTRO_FEATURES = "alsa argp bluetooth ext2 ipv4 ipv6 irda largefile nfs pam pci
 DISTRO_FEATURES_BACKFILL_CONSIDERED_append = " sysvinit"
 
 # USE-flag like features
-DISTRO_FEATURES += "tk"
-DISTRO_FEATURES += "x11"
-DISTRO_FEATURES += "3g"
-DISTRO_FEATURES += "pulseaudio"
+DISTRO_FEATURES += "tk \
+                    x11 \
+                    3g \
+                    pulseaudio \
+"
 
 # OpenGL support
 DISTRO_GLFEATURES_x86 = "opengl"
